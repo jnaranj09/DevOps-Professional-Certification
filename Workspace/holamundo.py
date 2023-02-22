@@ -1,0 +1,5 @@
+print("Hola")
+nombre = input("Favor digite su nombre: ")
+print("Hola " + nombre)
+edad = int(input("Favor ingrese su edad: "))
+print("Tener " + str(edad) + " es bueno!" )
