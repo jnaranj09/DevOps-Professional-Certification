@@ -45,7 +45,12 @@ while True:
         if menu == 4:
                 print("Ha seleccionado Division!\n")
                 divi1 = int(input("Favor ingrese el primer numero: "))
-                divi2 = int(input("Favor ingrese el segundo numero: "))
+                while True:
+                        divi2 = int(input("Favor ingrese el segundo numero: "))
+                        if divi2 == 0:
+                                print("No es posible dividir entre 0, favor digite otro numero")
+                        else:
+                                break
                 diviresult = divi1 / divi2
                 print( "\n" + str(divi1) + " / " + str(divi2) + " = " + str(diviresult) + "\n" )
 
@@ -57,7 +62,7 @@ while True:
         while True:
                 menuchoice = int(input("Digite:\n 1) Realizar otra operacion\n 2) Salir del programa\n Opcion: "))
                 if menuchoice < 1 or menuchoice > 2:
-                        print("\nOpcion Invalida!!\n")
+                        print("\nOpcion Invalida!!\n")             
                 else:
                         break
         
