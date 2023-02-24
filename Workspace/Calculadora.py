@@ -115,7 +115,7 @@ try:                            #2. Este try > While True loop intenta ejecutar 
 
                         while True:
                                 try:
-                                        menuchoice = int(input("Digite:\n\n 1) Realizar otra operacion\n 2) Salir del programa\n\n Opcion: "))
+                                        menuchoice = int(input("Ingrese un numero segun el menu de opciones:\n\n 1) Realizar otra operacion\n 2) Salir del programa\n\n Opcion: "))
                                         if menuchoice < 1 or menuchoice > 2:
                                                 print("\nOpcion Invalida!!\n")             
                                         else:
