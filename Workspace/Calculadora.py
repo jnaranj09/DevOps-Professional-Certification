@@ -1,6 +1,6 @@
 import time  #1. Este modulo le permite al programa ejecutar el comando "time.sleep() el cual duerme o pausa el programa por el tiempo especificado en segundos"
 try:                            #2. Este try > While True loop intenta ejecutar todo el programa excepto si se detecta un CTRL+C (Keyboard interrupt al final del codigo)
-        while True:             #si se detecta la interrupcion, el programa termina.
+        while True:             #   si se detecta la interrupcion, el programa termina.
                 print("-----------------------------------")
                 print("Bienvenido a tu calcu de confianza")
                 print("-----------------------------------")
@@ -83,6 +83,13 @@ try:                            #2. Este try > While True loop intenta ejecutar 
                                         try:
                                                 print("\nHa seleccionado Division!\n")
                                                 divi1 = int(input("Favor ingrese el primer numero: "))
+                                                
+                                                """
+                                                #6.
+                                                El siguiente While loop valida que mientras divi2 sea igual a 0, volvera a solicitar el dato
+                                                ya que ningun numero es divisible entre 0
+                                                """
+                                                
                                                 while True:
                                                         divi2 = int(input("Favor ingrese el segundo numero: "))
                                                         if divi2 == 0:
@@ -101,6 +108,7 @@ try:                            #2. Este try > While True loop intenta ejecutar 
 
 
                         """
+                        #7. 
                         El siguiente "While True" evalua que la seleccion sea un numero entre 1 y 2. Si es invalido, entonces repite el bucle
                         hasta que se digite un numero entre 1 y 2
                         """
@@ -118,6 +126,7 @@ try:                            #2. Este try > While True loop intenta ejecutar 
                                         print("-----------------------------------")
                         
                         """
+                        #8. 
                         Los siguientes IFs, validan si se selecciona "volver al menu", entonces NO se ejecuta el quit(),
                         y el primer "While true" (El menu) se vuelve a ejecutar.
                         Si se selecciona "Salir del programa", entonces se ejecuta un "quit()" y el programa se cierra
@@ -139,7 +148,7 @@ try:                            #2. Este try > While True loop intenta ejecutar 
 
 
 except KeyboardInterrupt:       #2.1 Este try > While True loop intenta ejecutar todo el programa excepto si se detecta un CTRL+C (Keyboard interrupt al final del codigo)
-                                #si se detecta la interrupcion, el programa termina.
+                                #    si se detecta la interrupcion, el programa termina.
         print("\n-----------------------------------")
         print("El programa fue interrumpido por el usuario")
         time.sleep(1)
